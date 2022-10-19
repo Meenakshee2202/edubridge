@@ -1,0 +1,19 @@
+
+mysql> select section , count(*)  "No of candidates gt than 60" from semester_exam 
+     where marks>=60 group by section order by section;
+
+
+	Section      No of candidates gt than 60
+	-----      ---------------------------
+	A                               3
+	B                               4
+	C                               3
+
+mysql> select section , count(*)  "No of candidates gt than 75" from semester_exam 
+     where marks>=75 group by section order by section;
+
+	Section      No of candidates gt than 75
+	-----      ---------------------------
+	A                               2
+	B                               2
+	C                               1
